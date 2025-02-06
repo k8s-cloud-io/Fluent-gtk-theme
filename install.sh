@@ -32,7 +32,7 @@ SASSC_OPT="-M -t expanded"
 
 THEME_NAME=Fluent
 THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-teal' '-grey')
-COLOR_VARIANTS=('' '-Light' '-Dark')
+COLOR_VARIANTS=('' '-Light' '-Dark' '-Darker')
 SIZE_VARIANTS=('' '-compact')
 
 if [[ "$(command -v gnome-shell)" ]]; then
@@ -67,7 +67,7 @@ OPTIONS:
 
   -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|teal|grey|all] (Default: blue)
 
-  -c, --color VARIANT     Specify color variant(s) [standard|light|dark] (Default: All variants)s)
+  -c, --color VARIANT     Specify color variant(s) [standard|light|dark|darker] (Default: All variants)s)
 
   -s, --size VARIANT      Specify size variant [standard|compact] (Default: All variants)
 
