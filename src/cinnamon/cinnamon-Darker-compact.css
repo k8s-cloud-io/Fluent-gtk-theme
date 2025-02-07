@@ -156,13 +156,13 @@ StScrollBar StBin#trough {
 
 StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
   border-radius: 9999px;
-  background-color: #858585;
+  background-color: #7a7a7a;
   border: 0px solid;
   margin: 0px;
 }
 
 StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
-  background-color: #707070;
+  background-color: #646464;
 }
 
 StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
@@ -273,7 +273,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #Tooltip {
   border-radius: 2px;
   padding: 5px 12px;
-  background-color: rgba(40, 40, 40, 0.9);
+  background-color: rgba(54, 54, 54, 0.9);
   color: white;
   font-size: 1em;
   font-weight: normal;
@@ -300,7 +300,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-menu-content {
   padding: 4px 0;
   color: white;
-  background-color: rgba(30, 30, 30, 0.98);
+  background-color: rgba(34, 34, 34, 0.98);
   border-radius: 5px;
   margin: 4px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
@@ -525,7 +525,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 1em;
   padding: 0px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 16px rgba(0, 0, 0, 0.24);
-  background-color: rgba(30, 30, 30, 0.98);
+  background-color: rgba(31, 31, 31, 0.98);
 }
 
 .panel-top .panel-button:hover,
@@ -1057,7 +1057,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin-from-right-edge-of-screen: 12px;
   width: 28em;
   color: white;
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: rgba(34, 34, 34, 0.98);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
   margin: 7px 12px 17px 12px;
 }
@@ -1136,7 +1136,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .switcher-list {
   color: white;
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: rgba(34, 34, 34, 0.98);
   border: none;
   border-radius: 2px;
   padding: 20px;
@@ -1623,7 +1623,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 1em;
   padding: 16px;
   color: white;
-  background-color: rgba(31, 31, 31, 0.8);
+  background-color: rgba(31, 31, 31, 0.98);
 }
 
 .osd-window {
@@ -1635,7 +1635,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   min-height: 64px;
   color: white;
   border-radius: 0;
-  background-color: rgba(31, 31, 31, 0.8);
+  background-color: rgba(31, 31, 31, 0.98);
   border: none;
 }
 
@@ -1830,7 +1830,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .grouped-window-list-thumbnail-menu {
   padding: 4px;
   color: white;
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: rgba(34, 34, 34, 0.98);
   border-radius: 5px;
   margin: 4px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
@@ -2088,7 +2088,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: 0px solid rgba(34, 34, 34, 0.9);
   border-bottom: 1px;
   -slider-height: 0.5em;
-  -slider-background-color: #262626;
+  -slider-background-color: #151515;
   -slider-border-color: rgba(0, 0, 0, 0);
   -slider-active-background-color: #3281EA;
   -slider-active-border-color: rgba(0, 0, 0, 0);
@@ -2142,16 +2142,16 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: rgba(69, 69, 69, 0.8);
+  -active-window-background: rgba(69, 69, 69, 0.98);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(69, 69, 69, 0.8);
+  -inactive-window-background: rgba(69, 69, 69, 0.98);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: rgba(82, 82, 82, 0.8);
+  -active-window-background: rgba(82, 82, 82, 0.98);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(44, 44, 44, 0.8);
+  -inactive-window-background: rgba(44, 44, 44, 0.98);
   -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 

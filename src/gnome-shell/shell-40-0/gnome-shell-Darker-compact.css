@@ -1233,7 +1233,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .candidate-popup-content {
-  background-color: rgba(32, 32, 32, 0.97);
+  background-color: rgba(255, 255, 255, 0.97);
   border-radius: 3px;
   box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.25) !important;
   margin: 2px 8px 11px;
@@ -1310,17 +1310,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin: 6px 8px 12px;
   border-radius: 3px;
   color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(32, 32, 32, 0.92);
+  background-color: rgba(255, 255, 255, 0.92);
   border: none;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
 }
 
 .notification-banner:hover {
-  background-color: rgba(32, 32, 32, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .notification-banner:focus {
-  background-color: #202020;
+  background-color: #ffffff;
 }
 
 .notification-banner .notification-actions {
@@ -2933,7 +2933,7 @@ StWidget.focused .app-well-app-running-dot {
 /* Looking Glass */
 #LookingGlassDialog {
   color: rgba(255, 255, 255, 0.7);
-  background-color: #202020;
+  background-color: #ffffff;
   spacing: 4px;
   padding: 6px;
   border: none;
@@ -2945,7 +2945,7 @@ StWidget.focused .app-well-app-running-dot {
   padding: 0 8px;
   border: none;
   border-radius: 0;
-  background-color: rgba(32, 32, 32, 0.01);
+  background-color: rgba(255, 255, 255, 0.01);
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
 }
@@ -3003,7 +3003,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #LookingGlassDialog .notebook-tab:selected {
-  background-color: rgba(32, 32, 32, 0.01);
+  background-color: rgba(255, 255, 255, 0.01);
   box-shadow: inset 0 -2px 0 #3281ea;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: none;
@@ -3091,7 +3091,7 @@ StWidget.focused .app-well-app-running-dot {
 .lg-extension {
   border: none;
   border-radius: 3px;
-  background-color: #606060;
+  background-color: #bfbfbf;
   padding: 4px;
 }
 
@@ -3105,7 +3105,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #LookingGlassPropertyInspector {
-  background: #202020;
+  background: #ffffff;
   border: none;
   border-radius: 3px;
   padding: 6px;

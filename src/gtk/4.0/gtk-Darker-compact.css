@@ -1701,7 +1701,7 @@ toolbar.osd {
   padding: 4px;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 3px 4px rgba(0, 0, 0, 0.14), 0 1px 6px rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
-  background-color: #3C3C3C;
+  background-color: #222222;
   border: none;
   color: white;
 }
@@ -2105,7 +2105,7 @@ headerbar.default-decoration windowcontrols > menubutton {
 }
 
 window.devel headerbar.titlebar {
-  background: #202020 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, linear-gradient(to right, transparent 65%, rgba(50, 129, 234, 0.1)), linear-gradient(to top, #282828 3px, #2d2d2d);
+  background: #202020 cross-fade(10% -gtk-icontheme("system-run-symbolic"), image(transparent)) 90% 0/256px 256px no-repeat, linear-gradient(to right, transparent 65%, rgba(50, 129, 234, 0.2)), linear-gradient(to top, #181818, #202020 3px, #2f2f2f);
 }
 
 window.devel headerbar.titlebar:backdrop {
@@ -2190,8 +2190,8 @@ headerbar .pathbar {
  * Tree Views *
  **************/
 treeview.view {
-  border-left-color: #4d4d4d;
-  border-top-color: #4d4d4d;
+  border-left-color: #3c3c3c;
+  border-top-color: #3c3c3c;
   padding: 0;
 }
 
@@ -2538,14 +2538,14 @@ popover.background, popover.background:backdrop {
 popover.background > arrow {
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.1);
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: rgba(34, 34, 34, 0.98);
 }
 
 popover.background > contents {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.1);
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: rgba(34, 34, 34, 0.98);
   border-radius: 6px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -2585,7 +2585,7 @@ popover.background > contents list separator {
 popover.background list,
 popover.background .view:not(:selected),
 popover.background toolbar {
-  background-color: #3C3C3C;
+  background-color: #222222;
 }
 
 popover.background list > row {
@@ -2709,7 +2709,7 @@ tabbar tabbox tab:disabled, notebook > header tab:disabled {
 tabbar tabbox tab:checked, notebook > header tab:checked, tabbar tabbox tab:selected, notebook > header tab:selected {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   background-clip: padding-box;
-  border-color: #4d4d4d;
+  border-color: #3c3c3c;
   color: white;
   box-shadow: none;
 }
@@ -3110,7 +3110,7 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical button {
 }
 
 scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
-  background-color: rgba(60, 60, 60, 0.9);
+  background-color: rgba(34, 34, 34, 0.9);
 }
 
 scrollbar.horizontal > range > trough > slider {
@@ -3232,11 +3232,11 @@ checkbutton.selection-mode label:dir(rtl) {
 }
 
 checkbutton.selection-mode check {
-  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-unchecked-dark.png"), url("assets/selectionmode-checkbox-unchecked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-unchecked-darker.png"), url("assets/selectionmode-checkbox-unchecked-darker@2.png"));
 }
 
 checkbutton.selection-mode check:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-checked-dark.png"), url("assets/selectionmode-checkbox-checked-dark@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-checked-darker.png"), url("assets/selectionmode-checkbox-checked-darker@2.png"));
 }
 
 checkbutton,
@@ -3498,19 +3498,19 @@ scale > trough > slider {
 }
 
 scale > trough > slider {
-  background-image: -gtk-scaled(url("assets/scale-slider-dark.png"), url("assets/scale-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-darker.png"), url("assets/scale-slider-darker@2.png"));
 }
 
 scale > trough > slider:hover {
-  background-image: -gtk-scaled(url("assets/scale-slider-hover-dark.png"), url("assets/scale-slider-hover-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-hover-darker.png"), url("assets/scale-slider-hover-darker@2.png"));
 }
 
 scale > trough > slider:active {
-  background-image: -gtk-scaled(url("assets/scale-slider-active-dark.png"), url("assets/scale-slider-active-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-active-darker.png"), url("assets/scale-slider-active-darker@2.png"));
 }
 
 scale > trough > slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-slider-disabled-dark.png"), url("assets/scale-slider-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-disabled-darker.png"), url("assets/scale-slider-disabled-darker@2.png"));
 }
 
 scale.fine-tune.horizontal {
@@ -3599,15 +3599,15 @@ scale.horizontal.marks-before:not(.marks-after) slider {
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-darker.png"), url("assets/scale-horz-marks-before-slider-darker@2.png"));
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-disabled-dark.png"), url("assets/scale-horz-marks-before-slider-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-disabled-darker.png"), url("assets/scale-horz-marks-before-slider-disabled-darker@2.png"));
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-darker.png"), url("assets/scale-horz-marks-before-slider-darker@2.png"));
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
@@ -3620,15 +3620,15 @@ scale.horizontal.marks-after:not(.marks-before) slider {
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-darker.png"), url("assets/scale-horz-marks-after-slider-darker@2.png"));
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-disabled-dark.png"), url("assets/scale-horz-marks-after-slider-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-disabled-darker.png"), url("assets/scale-horz-marks-after-slider-disabled-darker@2.png"));
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-darker.png"), url("assets/scale-horz-marks-after-slider-darker@2.png"));
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
@@ -3641,15 +3641,15 @@ scale.vertical.marks-before:not(.marks-after) slider {
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-darker.png"), url("assets/scale-vert-marks-before-slider-darker@2.png"));
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-disabled-dark.png"), url("assets/scale-vert-marks-before-slider-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-disabled-darker.png"), url("assets/scale-vert-marks-before-slider-disabled-darker@2.png"));
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-darker.png"), url("assets/scale-vert-marks-before-slider-darker@2.png"));
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
@@ -3662,15 +3662,15 @@ scale.vertical.marks-after:not(.marks-before) slider {
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-darker.png"), url("assets/scale-vert-marks-after-slider-darker@2.png"));
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-disabled-dark.png"), url("assets/scale-vert-marks-after-slider-disabled-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-disabled-darker.png"), url("assets/scale-vert-marks-after-slider-disabled-darker@2.png"));
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-darker.png"), url("assets/scale-vert-marks-after-slider-darker@2.png"));
 }
 
 scale.color {
@@ -4220,7 +4220,7 @@ calendar > grid > label.day-number.other-month {
  * Dialogs *
  ***********/
 window.dialog.message.background {
-  background-color: #3C3C3C;
+  background-color: #222222;
 }
 
 window.dialog.message box.dialog-vbox.vertical {
@@ -4231,12 +4231,12 @@ window.dialog.message .titlebar {
   min-height: 20px;
   border-style: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-  background-color: #3C3C3C;
+  background-color: #222222;
   color: white;
 }
 
 window.dialog.message .titlebar:backdrop {
-  background-color: #3C3C3C;
+  background-color: #222222;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -4265,7 +4265,7 @@ window.dialog.message.csd .dialog-action-area > button.destructive-action:not(:d
 }
 
 window.messagedialog.background {
-  background-color: #3C3C3C;
+  background-color: #222222;
 }
 
 window.messagedialog .response-area {
@@ -4721,7 +4721,7 @@ colorswatch#add-color-button:only-child {
 }
 
 colorswatch#add-color-button overlay {
-  background-color: #3C3C3C;
+  background-color: #222222;
 }
 
 colorswatch:disabled {
@@ -4744,7 +4744,7 @@ colorchooser .popover.osd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 3px 4px rgba(0, 0, 0, 0.14), 0 1px 6px rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
-  background-color: #3C3C3C;
+  background-color: #222222;
 }
 
 colorchooser .popover.osd:backdrop {
@@ -4874,7 +4874,7 @@ shortcut > .keycap {
   border: solid 1px rgba(255, 255, 255, 0.12);
   border-radius: 3px;
   box-shadow: inset 0 -2px rgba(255, 255, 255, 0.12);
-  background-color: #3C3C3C;
+  background-color: #222222;
   color: white;
   font-size: smaller;
 }
@@ -5187,7 +5187,7 @@ weekgrid.current {
 }
 
 popover.events {
-  background-color: rgba(60, 60, 60, 0.98);
+  background-color: rgba(34, 34, 34, 0.98);
   padding: 0;
 }
 
@@ -7557,7 +7557,7 @@ tabbar tab {
 tabbar tab:selected, tabbar tab:checked, tabbar tab:active, tabbar tab:active:hover, tabbar tab:checked:hover {
   background-color: #2B2B2B;
   background-clip: padding-box;
-  border-color: #4d4d4d;
+  border-color: #3c3c3c;
   color: white;
 }
 
@@ -7852,7 +7852,7 @@ FIXME this is really an API */
 @define-color text_view_bg #1c1c1c;
 @define-color budgie_tasklist_indicator_color #3281EA;
 @define-color budgie_tasklist_indicator_color_active #3281EA;
-@define-color budgie_tasklist_indicator_color_active_window rgba(174, 174, 174, 0.908);
+@define-color budgie_tasklist_indicator_color_active_window rgba(154, 154, 154, 0.9908);
 @define-color budgie_tasklist_indicator_color_attention #FDD633;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;

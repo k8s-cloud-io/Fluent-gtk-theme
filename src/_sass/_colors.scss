@@ -22,9 +22,10 @@
 }
 
 @function on($color, $state: 'primary') {
-  // Allow 'light' or 'dark' to $color
+  // Allow 'light','dark' or 'darker' to $color
   @if ($color == 'light') { $color: white; }
   @if ($color == 'dark') { $color: black; }
+  @if ($color == 'darker') {$color: black; }
 
   // Calculate color brightness according to https://www.w3.org/TR/AERT/#color-contrast
   $brightness: (red($color) * 299 + green($color) * 587 + blue($color) * 114) / 1000;
@@ -89,6 +90,8 @@
   @if ($variant == 'light' and $topbar == 'dark' and $state=='backdrop') { @return #3c3c3c; }
   @if ($variant == 'dark' and $state=='normal') { @return #202020; }
   @if ($variant == 'dark' and $state=='backdrop') { @return #2C2C2C; }
+  @if ($variant == 'darker' and $state == 'normal') { @return #202020; }
+  @if ($variant == 'darker' and $state == 'backdrop') { @return #2C2C2C; }
 }
 
 //
@@ -98,8 +101,18 @@ $primary:                               theme(color);
 $entry-highlight:                       lighten($primary, 25%);
 $drop_target_color:                     #FF7043;
 
-$background:                            if($variant == 'light', #F2F2F2, #333333);
-$surface:                               if($variant == 'light', #FFFFFF, #3C3C3C);
+$background: #222222;
+$surface: #222222;
+
+@if $variant == 'light' {
+  $background: #F2F2F2;
+  $surface: #FFFFFF;
+}
+@else if $variant == 'dark' {
+  $background: #333333;
+  $surface: #3C3C3C
+}
+
 $base:                                  if($variant == 'light', #FFFFFF, #2B2B2B); // semi-surface with 1dp elevation
 $base-alt:                              if($variant == 'light', #FAFAFA, #303030);
 
@@ -111,7 +124,11 @@ $menu:                                  if($opacity == 'default', rgba($surface,
 $tooltip:                               rgba(#363636, 0.9);
 $titlebar:                              titlebar(normal);
 $titlebar-backdrop:                     titlebar(backdrop);
+
 $panel:                                 if($topbar == 'light', rgba(#F7F7F7, 0.8), rgba(#1F1F1F, 0.8));
+@if $topbar == 'darker' {
+  $panel: rgba(#1F1F1F, 0.98);
+}
 $panel-solid:                           if($topbar == 'light', #F7F7F7, #1F1F1F); // for Unity panel which doesn't allow translucent colors
 
 $blur_opacity:                          if($variant == 'light', 0.85, 0.5);

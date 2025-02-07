@@ -4,7 +4,7 @@ THEME_DIR=$(cd $(dirname $0) && pwd)
 
 THEME_NAME=Fluent
 
-_COLOR_VARIANTS=('' '-Light' '-Dark')
+_COLOR_VARIANTS=('' '-Light' '-Dark' '-Darker')
 _COMPA_VARIANTS=('' '-compact')
 _THEME_VARIANTS=('' '-purple' '-pink' '-red' '-orange' '-yellow' '-green' '-grey' '-teal')
 
@@ -26,7 +26,7 @@ for theme in "${_THEME_VARIANTS[@]}"; do
 done
 
 for theme in "${_THEME_VARIANTS[@]}"; do
-  tar -Jcvf ${THEME_NAME}${theme}.tar.xz ${THEME_NAME}${theme}{'','-Light','-Dark'}{'','-compact'}
+  tar -Jcvf ${THEME_NAME}${theme}.tar.xz ${THEME_NAME}${theme}{'','-Light','-Dark'.'-Darker'}{'','-compact'}
 done
 }
 

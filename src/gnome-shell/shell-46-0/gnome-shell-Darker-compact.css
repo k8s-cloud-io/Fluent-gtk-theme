@@ -1218,14 +1218,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 0;
   margin: 2px;
   box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.15);
-  background-color: rgba(32, 32, 32, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid transparent;
   border-left: none;
   border-bottom: none;
 }
 
 .message:hover, .message:focus, .message:active {
-  background-color: #202020;
+  background-color: #ffffff;
 }
 
 .popup-menu .message {
@@ -1405,7 +1405,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .candidate-popup-content {
-  background-color: rgba(32, 32, 32, 0.97);
+  background-color: rgba(255, 255, 255, 0.97);
   border-radius: 3px;
   box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.25) !important;
   margin: 2px 8px 11px;
@@ -3146,7 +3146,7 @@ StWidget.focused .app-grid-running-dot {
 /* Looking Glass */
 #LookingGlassDialog {
   color: rgba(255, 255, 255, 0.7);
-  background-color: #202020;
+  background-color: #ffffff;
   spacing: 4px;
   padding: 6px;
   border: none;
@@ -3158,7 +3158,7 @@ StWidget.focused .app-grid-running-dot {
   padding: 0 8px;
   border: none;
   border-radius: 0;
-  background-color: rgba(32, 32, 32, 0.01);
+  background-color: rgba(255, 255, 255, 0.01);
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
 }
@@ -3216,7 +3216,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 #LookingGlassDialog .notebook-tab:selected {
-  background-color: rgba(32, 32, 32, 0.01);
+  background-color: rgba(255, 255, 255, 0.01);
   box-shadow: inset 0 -2px 0 #3281ea;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: none;
@@ -3304,7 +3304,7 @@ StWidget.focused .app-grid-running-dot {
 .lg-extension {
   border: none;
   border-radius: 3px;
-  background-color: #606060;
+  background-color: #bfbfbf;
   padding: 4px;
 }
 
@@ -3318,7 +3318,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 #LookingGlassPropertyInspector {
-  background: #202020;
+  background: #ffffff;
   border: none;
   border-radius: 3px;
   padding: 6px;
@@ -3536,7 +3536,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-toggle-menu {
-  background-color: #2d2d2d !important;
+  background-color: white !important;
   color: rgba(255, 255, 255, 0.9) !important;
   border-radius: 3px !important;
   padding: 8px;
@@ -3620,7 +3620,7 @@ StWidget.focused .app-grid-running-dot {
 
 .quick-settings-system-item .power-item:insensitive {
   color: rgba(255, 255, 255, 0.8);
-  background-color: #343434;
+  background-color: white;
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: none;
   background-color: transparent;
@@ -4876,7 +4876,7 @@ StWidget.focused .app-grid-running-dot {
   padding: 4px !important;
   margin: 4px !important;
   border: none !important;
-  background-color: rgba(32, 32, 32, 0.97);
+  background-color: rgba(255, 255, 255, 0.97);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) !important;
   border-radius: 3px !important;
 }

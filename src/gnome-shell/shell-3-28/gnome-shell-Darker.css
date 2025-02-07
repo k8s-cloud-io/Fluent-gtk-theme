@@ -1,13 +1,13 @@
 /* This stylesheet is generated, DO NOT EDIT */
 /* GLOBALS */
 * {
-  font-size: 9.75pt;
+  font-size: 10.5pt;
   font-weight: 400;
   transition-duration: 150ms;
 }
 
 stage {
-  font-size: 9.75pt;
+  font-size: 10.5pt;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -31,11 +31,11 @@ stage {
 /* WIDGETS */
 /* Buttons */
 .button {
-  min-height: 32px;
+  min-height: 36px;
   padding: 0 16px;
   border-width: 0;
   border-radius: 3px;
-  font-size: 9.75pt;
+  font-size: 10.5pt;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
@@ -68,13 +68,13 @@ stage {
 /* Entries */
 GPasteSearchEntry,
 StEntry {
-  min-height: 32px;
+  min-height: 36px;
   padding: 0 8px;
   border-radius: 3px;
   border-width: 0;
   selection-background-color: #3281ea;
   selected-color: #FFFFFF !important;
-  font-size: 11.25pt;
+  font-size: 12pt;
   font-weight: 400;
   caret-color: rgba(255, 255, 255, 0.7);
   color: rgba(255, 255, 255, 0.7);
@@ -200,7 +200,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Check Boxes */
 .check-box * {
-  min-height: 16px;
+  min-height: 20px;
   padding: 8px 0;
 }
 
@@ -211,7 +211,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .check-box StBin {
   width: 24px;
   height: 24px;
-  padding: 4px;
+  padding: 6px;
   border-radius: 9999px;
   background-image: url("assets/checkbox-off.svg");
 }
@@ -331,9 +331,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .user-widget.vertical .user-icon StIcon {
-  padding: 14px;
-  padding-top: 12px;
-  padding-bottom: 16px;
+  padding: 20px;
+  padding-top: 18px;
+  padding-bottom: 22px;
   width: 88px;
   height: 88px;
 }
@@ -343,15 +343,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .user-widget.horizontal .user-icon StIcon {
-  padding: 8px;
-  width: 10px;
-  height: 10px;
+  padding: 12px;
+  width: 15px;
+  height: 15px;
 }
 
 .caps-lock-warning-label {
   text-align: center;
   padding-bottom: 8px;
-  font-size: 9.75pt;
+  font-size: 10.5pt;
   font-weight: 400;
   color: #FF6D00;
 }
@@ -473,7 +473,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .run-dialog .run-dialog-description {
-  font-size: 11.25pt;
+  font-size: 12pt;
   font-weight: 400;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
@@ -809,22 +809,22 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu.panel-menu {
-  -boxpointer-gap: 2px;
+  -boxpointer-gap: 4px;
   margin-bottom: 1.75em;
 }
 
 .popup-menu-content {
   border-image: url("assets/menu.svg") 24 32 28 28;
-  padding: 8px 6px 12px !important;
+  padding: 10px 6px 14px !important;
   border: none;
   background-color: transparent;
   box-shadow: none;
 }
 
 .popup-menu-item {
-  spacing: 4px;
-  padding: 4px;
-  margin: 0 4px;
+  spacing: 6px;
+  padding: 6px;
+  margin: 0 6px;
   color: rgba(255, 255, 255, 0.9);
   transition-duration: 100ms;
   border-radius: 3px;
@@ -898,7 +898,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-sub-menu {
-  margin: 0 4px;
+  margin: 0 6px;
   background-color: rgba(255, 255, 255, 0.06);
   border-radius: 0 0 3px 3px;
   border: none;
@@ -941,7 +941,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: none;
   padding: 0 0;
   margin: 0 0;
-  height: 2px;
+  height: 4px;
 }
 
 .popup-separator-menu-item .popup-separator-menu-item-separator {
@@ -958,12 +958,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .background-menu {
-  -boxpointer-gap: 2px;
+  -boxpointer-gap: 4px;
   -arrow-rise: 0px;
 }
 
 .aggregate-menu {
-  min-width: 19em;
+  min-width: 21em;
 }
 
 .aggregate-menu .popup-menu-icon {
@@ -973,18 +973,18 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .aggregate-menu .popup-menu-icon:ltr {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 .aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:ltr {
   /* 12px spacing + 2*4px padding */
-  padding-left: 8px;
+  padding-left: 12px;
   margin-left: 1em;
 }
 
 .aggregate-menu .popup-sub-menu .popup-menu-item > :first-child:rtl {
   /* 12px spacing + 2*4px padding */
-  padding-right: 8px;
+  padding-right: 12px;
   margin-right: 1em;
 }
 
@@ -1012,7 +1012,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.06);
   border-radius: 9999px;
   /* wish we could do 50% */
-  padding: 12px;
+  padding: 14px;
   border: none;
   -st-icon-style: symbolic;
 }
@@ -1021,7 +1021,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 0.9);
   border: none;
-  padding: 12px;
+  padding: 14px;
 }
 
 .system-menu-action:active {
@@ -1210,7 +1210,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   border-radius: 0;
-  height: 30px;
+  height: 34px;
 }
 
 #panel #panelLeft, #panel #panelCenter {
@@ -1227,8 +1227,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-button {
-  -natural-hpadding: 4px;
-  -minimum-hpadding: 2px;
+  -natural-hpadding: 8px;
+  -minimum-hpadding: 4px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.75);
   transition-duration: 150ms;
@@ -1269,8 +1269,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #panel .panel-button .system-status-icon {
   icon-size: 16px;
-  padding: 4px;
-  margin: 0 4px;
+  padding: 6px;
+  margin: 0 6px;
 }
 
 #panel .panel-button .panel-status-menu-box .system-status-icon {
@@ -1278,11 +1278,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-button .panel-status-menu-box StLabel {
-  padding: 0 0 0 2px;
+  padding: 0 0 0 3px;
 }
 
 #panel .panel-button .appindicator-trayicons-box {
-  margin: 0 4px;
+  margin: 0 6px;
 }
 
 #panel .panel-button .panel-status-indicators-box,
@@ -1305,7 +1305,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 #panel .panel-button#panelActivities > * {
-  width: 32px;
+  width: 36px;
 }
 
 #panel .panel-button#panelActivities:overview {
@@ -1340,7 +1340,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #panel Gjs_ui_panel_AggregateMenu.panel-button .system-status-icon {
   margin: 0 0 !important;
-  padding: 4px !important;
+  padding: 6px !important;
 }
 
 #panel .screencast-indicator,
@@ -1354,12 +1354,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .clock-display-box .clock {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 #calendarArea {
-  padding: 4px 0;
+  padding: 6px 0;
 }
 
 .calendar {
@@ -1373,9 +1373,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .datemenu-calendar-column {
-  spacing: 4px;
+  spacing: 6px;
   border: 0 solid rgba(255, 255, 255, 0.1);
-  padding: 0 8px;
+  padding: 0 12px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1390,22 +1390,22 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .datemenu-calendar-column:ltr {
-  margin-right: 6px;
+  margin-right: 8px;
   border-left-width: 0;
 }
 
 .datemenu-calendar-column:rtl {
-  margin-left: 6px;
+  margin-left: 8px;
   border-right-width: 0;
 }
 
 .datemenu-calendar-column .datemenu-displays-box {
-  spacing: 4px;
+  spacing: 6px;
 }
 
 .datemenu-today-button {
-  min-height: 48px;
-  padding: 4px;
+  min-height: 56px;
+  padding: 6px;
   border-radius: 3px;
   border: none;
   box-shadow: none;
@@ -1436,7 +1436,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .calendar-month-label {
-  height: 20px;
+  height: 24px;
   margin: 2px;
   padding: 6px 16px;
   border-radius: 3px;
@@ -1452,8 +1452,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .pager-button {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   margin: 2px;
   border-radius: 9999px;
   background-color: transparent;
@@ -1492,8 +1492,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 9pt;
   font-weight: 400;
   text-align: center;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   padding: 0 0;
   margin: 2px;
   border-radius: 9999px;
@@ -1520,8 +1520,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .calendar-day-base.calendar-day-heading {
-  width: 28px;
-  height: 21px;
+  width: 32px;
+  height: 25px;
   margin-top: 2px;
   padding: 7px 0 0;
   border-radius: 100px;
@@ -1589,7 +1589,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .calendar-week-number {
   height: 1.8em;
   width: 2em;
-  margin: 4px 0;
+  margin: 6px 0;
   border-radius: 9999px;
   background-color: rgba(255, 255, 255, 0.03);
   color: rgba(255, 255, 255, 0.5);
@@ -1602,7 +1602,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .world-clocks-button,
 .weather-button,
 .events-button {
-  padding: 4px 8px;
+  padding: 6px 8px;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: none;
@@ -1653,11 +1653,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .events-button .events-box {
-  spacing: 4px;
+  spacing: 6px;
 }
 
 .events-button .events-list {
-  spacing: 8px;
+  spacing: 12px;
   text-shadow: none;
 }
 
@@ -1694,11 +1694,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .weather-button .weather-box {
-  spacing: 4px;
+  spacing: 6px;
 }
 
 .weather-button .weather-header-box {
-  spacing: 4px;
+  spacing: 6px;
 }
 
 .weather-button .weather-header.location {
@@ -1707,7 +1707,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .weather-button .weather-forecast-icon {
-  icon-size: 24px;
+  icon-size: 32px;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1728,7 +1728,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .message-list {
   width: 31.5em;
-  padding: 0 8px;
+  padding: 0 12px;
   color: rgba(255, 255, 255, 0.7);
   text-shadow: none;
   box-shadow: none;
@@ -1739,19 +1739,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .message-list-sections {
-  spacing: 4px;
-  margin: 0 8px;
+  spacing: 6px;
+  margin: 0 16px;
 }
 
 .message-list-section,
 .message-list-section-list {
-  spacing: 4px;
+  spacing: 6px;
 }
 
 .message-list-controls {
-  margin: 4px 8px 0;
-  padding: 2px;
-  spacing: 8px;
+  margin: 8px 16px 0;
+  padding: 4px;
+  spacing: 12px;
 }
 
 .message {
@@ -1778,11 +1778,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .message .message-icon-bin {
-  padding: 8px 0px 8px 8px;
+  padding: 12px 0px 12px 12px;
 }
 
 .message .message-icon-bin:rtl {
-  padding: 8px 8px 8px 0px;
+  padding: 12px 12px 12px 0px;
 }
 
 .message .message-icon-bin > StIcon {
@@ -1796,8 +1796,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .message .message-content {
-  padding: 8px;
-  spacing: 2px;
+  padding: 14px;
+  spacing: 4px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1806,7 +1806,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .message .message-secondary-bin {
-  padding: 0 4px;
+  padding: 0 8px;
 }
 
 .message .message-secondary-bin > .event-time {
@@ -1914,7 +1914,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.1428571429em;
 }
 
 .window-close {
@@ -2086,8 +2086,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   box-shadow: none !important;
   selection-background-color: #3281ea;
   selected-color: #FFFFFF !important;
-  margin-top: 8px;
-  margin-bottom: 4px;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 
 #overview .search-entry:hover {
@@ -2157,7 +2157,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .list-search-result-title {
-  font-size: 11.25pt;
+  font-size: 12pt;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.85);
   spacing: 12px;
@@ -2185,8 +2185,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   font-size: 1em;
   color: rgba(255, 255, 255, 0.85);
   background-color: rgba(255, 255, 255, 0.13);
-  padding: 0 2px;
-  margin: 0 2px;
+  padding: 0 3px;
+  margin: 0 3px;
   border: none;
   border-radius: 3px;
 }
@@ -2212,7 +2212,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .dash-item-container > StWidget {
-  padding: 4px 2px;
+  padding: 6px 3px;
 }
 
 .dash-label {
@@ -2231,10 +2231,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 30px;
   -shell-grid-horizontal-item-size: 136px;
   -shell-grid-vertical-item-size: 136px;
-  row-spacing: 24px;
-  column-spacing: 24px;
-  max-row-spacing: 48px;
-  max-column-spacing: 48px;
+  row-spacing: 36px;
+  column-spacing: 36px;
+  max-row-spacing: 72px;
+  max-column-spacing: 72px;
 }
 
 .icon-grid .overview-icon {
@@ -2339,7 +2339,7 @@ StWidget.focused .app-well-app-running-dot {
 .grid-search-result .overview-icon {
   color: rgba(255, 255, 255, 0.85);
   border-radius: 3px;
-  padding: 4px;
+  padding: 6px;
   border: none;
   transition-duration: 150ms;
   text-align: center;
@@ -2509,8 +2509,8 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .app-folder-dialog .icon-grid {
-  row-spacing: 8px;
-  column-spacing: 20px;
+  row-spacing: 12px;
+  column-spacing: 30px;
 }
 
 .app-folder-dialog .page-indicators {
@@ -2526,23 +2526,23 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .app-folder-dialog-container {
-  padding: 4px;
+  padding: 6px;
   width: 600px;
   height: 600px;
 }
 
 .app-folder-icon {
-  padding: 4px;
-  spacing-rows: 4px;
-  spacing-columns: 4px;
+  padding: 6px;
+  spacing-rows: 6px;
+  spacing-columns: 6px;
 }
 
 .rename-folder-popup .rename-folder-popup-item {
-  spacing: 4px;
+  spacing: 6px;
 }
 
 .rename-folder-popup .rename-folder-popup-item:ltr, .rename-folder-popup .rename-folder-popup-item:rtl {
-  padding: 0 8px;
+  padding: 0 12px;
 }
 
 .app-menu,
@@ -2594,7 +2594,7 @@ StWidget.focused .app-well-app-running-dot {
 .notification-banner {
   font-size: 1em;
   width: 34em;
-  min-height: 56px;
+  min-height: 64px;
   margin: 5px;
   border-radius: 3px;
   color: rgba(255, 255, 255, 0.9);
@@ -2621,7 +2621,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .notification-banner .secondary-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.1428571429em;
 }
 
 .notification-banner .notification-actions {
@@ -2684,7 +2684,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .secondary-icon {
-  icon-size: 1.2307692308em;
+  icon-size: 1.1428571429em;
 }
 
 .chat-body {
@@ -2735,7 +2735,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .modal-dialog .modal-dialog-linked-button {
-  font-size: 9.75pt;
+  font-size: 10.5pt;
   font-weight: 500;
   margin: 0;
   border-radius: 0;
@@ -2802,7 +2802,7 @@ StWidget.focused .app-well-app-running-dot {
   padding: 2px 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-shadow: none;
-  font-size: 9.75pt;
+  font-size: 10.5pt;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
@@ -2908,7 +2908,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #keyboard .page-indicator {
-  padding: 4px;
+  padding: 6px;
 }
 
 #keyboard .page-indicator .page-indicator-icon {
@@ -3022,9 +3022,9 @@ StWidget.focused .app-well-app-running-dot {
   background-color: rgba(255, 255, 255, 0.97);
   border-radius: 3px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
-  margin: 2px 10px;
-  padding: 4px;
-  spacing: 4px;
+  margin: 3px 10px;
+  padding: 6px;
+  spacing: 6px;
 }
 
 .candidate-index {
@@ -3039,7 +3039,7 @@ StWidget.focused .app-well-app-running-dot {
 .candidate-box {
   transition-duration: 0ms;
   padding: 0.3em 0.5em 0.3em 0.5em;
-  margin-right: 2px;
+  margin-right: 3px;
   border-radius: 3px;
 }
 
@@ -3426,13 +3426,13 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .screen-shield-notification-label {
-  min-height: 18px;
+  min-height: 22px;
   padding: 2px 0px 0px 16px;
   font-weight: bold;
 }
 
 .screen-shield-notification-count-text {
-  min-height: 18px;
+  min-height: 22px;
   padding: 2px 0px 0px 16px;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -3545,7 +3545,7 @@ StWidget.focused .app-well-app-running-dot {
   transition-duration: 150ms;
   padding-left: 16px;
   padding-right: 16px;
-  min-height: 32px;
+  min-height: 36px;
   padding: 0 32px;
 }
 
@@ -3594,11 +3594,11 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .lg-obj-inspector-button {
-  min-height: 32px;
+  min-height: 36px;
   padding: 0 16px;
   border: none;
   border-radius: 3px;
-  font-size: 9.75pt;
+  font-size: 10.5pt;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   background-color: transparent;
@@ -3670,13 +3670,13 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer #dash, #dashtodockContainer:overview #dash, #dashtodockContainer.extended #dash, #dashtodockContainer.extended:overview #dash {
-  padding: 0 2px;
+  padding: 0 3px;
   border: none;
   margin: 0;
 }
 
 #dashtodockContainer.top #dash, #dashtodockContainer.top:overview #dash {
-  border-radius: 7px;
+  border-radius: 9px;
 }
 
 #dashtodockContainer.top.extended #dash, #dashtodockContainer.top.extended:overview #dash {
@@ -3684,7 +3684,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer.bottom #dash, #dashtodockContainer.bottom:overview #dash {
-  border-radius: 7px;
+  border-radius: 9px;
 }
 
 #dashtodockContainer.bottom.extended #dash, #dashtodockContainer.bottom.extended:overview #dash {
@@ -3692,7 +3692,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer.left #dash, #dashtodockContainer.left:overview #dash {
-  border-radius: 7px;
+  border-radius: 9px;
 }
 
 #dashtodockContainer.left.extended #dash, #dashtodockContainer.left.extended:overview #dash {
@@ -3700,7 +3700,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer.right #dash, #dashtodockContainer.right:overview #dash {
-  border-radius: 7px;
+  border-radius: 9px;
 }
 
 #dashtodockContainer.right.extended #dash, #dashtodockContainer.right.extended:overview #dash {
@@ -3739,7 +3739,7 @@ StWidget.focused .app-well-app-running-dot {
 
 #dashtodockContainer .app-well-app .overview-icon,
 #dashtodockContainer .show-apps .overview-icon {
-  padding: 4px;
+  padding: 6px;
   background-size: contain;
 }
 
@@ -3834,15 +3834,15 @@ StWidget.focused .app-well-app-running-dot {
 
 .gsconnect-device-menu .popup-menu-item {
   height: 20px !important;
-  padding: 2px 0;
+  padding: 3px 0;
 }
 
 .gsconnect-device-menu .popup-menu-item > :last-child:ltr {
-  padding-right: 4px !important;
-  margin-right: 8px !important;
+  padding-right: 6px !important;
+  margin-right: 12px !important;
 }
 
 .gsconnect-device-menu .popup-menu-item > :last-child:rtl {
-  padding-left: 4px !important;
-  padding-left: 8px !important;
+  padding-left: 6px !important;
+  padding-left: 12px !important;
 }
