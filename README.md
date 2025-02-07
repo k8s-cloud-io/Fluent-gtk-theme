@@ -42,7 +42,7 @@ Run the following commands in the terminal:
 
 -t, --theme VARIANT     Specify theme color variant(s) [default|purple|pink|red|orange|yellow|green|grey|teal|all] (Default: blue)
 
--c, --color VARIANT     Specify color variant(s) [standard|light|dark] (Default: All variants)
+-c, --color VARIANT     Specify color variant(s) [standard|light|dark|darker] (Default: All variants)
 
 -s, --size VARIANT      Specify size variant [standard|compact] (Default: All variants)
 
