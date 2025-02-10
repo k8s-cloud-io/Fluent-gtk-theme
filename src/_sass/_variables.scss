@@ -2,13 +2,13 @@
 @import 'tweaks-temp';
 
 $asset-suffix: '';
-@if $variant == 'dark' {
+$theme-asset-suffix: '-light';
+
+@if $variant == 'dark' or $variant == 'darker' {
   $asset-suffix: '-dark';
+  $theme-asset-suffix: '-dark';
 }
-@else if $variant == 'darker' {
-  $asset-suffix: '-darker';
-}
-$theme-asset-suffix: if($topbar == 'dark', if($variant == 'dark', '-dark', ''), '-light');
+
 
 //
 // Sizes

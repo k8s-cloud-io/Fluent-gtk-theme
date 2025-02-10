@@ -226,7 +226,7 @@ StScrollBar {
   &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
 
   .popup-menu-item:active & {
-    background-image: url("#{$asset_path}/toggle-off.svg");
+    background-image: url("assets-Dark/toggle-off.svg");
 
     &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
   }

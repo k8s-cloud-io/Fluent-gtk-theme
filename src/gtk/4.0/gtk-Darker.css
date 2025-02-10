@@ -3232,11 +3232,11 @@ checkbutton.selection-mode label:dir(rtl) {
 }
 
 checkbutton.selection-mode check {
-  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-unchecked-darker.png"), url("assets/selectionmode-checkbox-unchecked-darker@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-unchecked-dark.png"), url("assets/selectionmode-checkbox-unchecked-dark@2.png"));
 }
 
 checkbutton.selection-mode check:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-checked-darker.png"), url("assets/selectionmode-checkbox-checked-darker@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/selectionmode-checkbox-checked-dark.png"), url("assets/selectionmode-checkbox-checked-dark@2.png"));
 }
 
 checkbutton,
@@ -3498,19 +3498,19 @@ scale > trough > slider {
 }
 
 scale > trough > slider {
-  background-image: -gtk-scaled(url("assets/scale-slider-darker.png"), url("assets/scale-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-dark.png"), url("assets/scale-slider-dark@2.png"));
 }
 
 scale > trough > slider:hover {
-  background-image: -gtk-scaled(url("assets/scale-slider-hover-darker.png"), url("assets/scale-slider-hover-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-hover-dark.png"), url("assets/scale-slider-hover-dark@2.png"));
 }
 
 scale > trough > slider:active {
-  background-image: -gtk-scaled(url("assets/scale-slider-active-darker.png"), url("assets/scale-slider-active-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-active-dark.png"), url("assets/scale-slider-active-dark@2.png"));
 }
 
 scale > trough > slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-slider-disabled-darker.png"), url("assets/scale-slider-disabled-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-slider-disabled-dark.png"), url("assets/scale-slider-disabled-dark@2.png"));
 }
 
 scale.fine-tune.horizontal {
@@ -3599,15 +3599,15 @@ scale.horizontal.marks-before:not(.marks-after) slider {
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-darker.png"), url("assets/scale-horz-marks-before-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png"));
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-disabled-darker.png"), url("assets/scale-horz-marks-before-slider-disabled-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-disabled-dark.png"), url("assets/scale-horz-marks-before-slider-disabled-dark@2.png"));
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-darker.png"), url("assets/scale-horz-marks-before-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-before-slider-dark.png"), url("assets/scale-horz-marks-before-slider-dark@2.png"));
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
@@ -3620,15 +3620,15 @@ scale.horizontal.marks-after:not(.marks-before) slider {
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-darker.png"), url("assets/scale-horz-marks-after-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png"));
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-disabled-darker.png"), url("assets/scale-horz-marks-after-slider-disabled-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-disabled-dark.png"), url("assets/scale-horz-marks-after-slider-disabled-dark@2.png"));
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-darker.png"), url("assets/scale-horz-marks-after-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-horz-marks-after-slider-dark.png"), url("assets/scale-horz-marks-after-slider-dark@2.png"));
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
@@ -3641,15 +3641,15 @@ scale.vertical.marks-before:not(.marks-after) slider {
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-darker.png"), url("assets/scale-vert-marks-before-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png"));
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-disabled-darker.png"), url("assets/scale-vert-marks-before-slider-disabled-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-disabled-dark.png"), url("assets/scale-vert-marks-before-slider-disabled-dark@2.png"));
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-darker.png"), url("assets/scale-vert-marks-before-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-before-slider-dark.png"), url("assets/scale-vert-marks-before-slider-dark@2.png"));
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
@@ -3662,15 +3662,15 @@ scale.vertical.marks-after:not(.marks-before) slider {
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-darker.png"), url("assets/scale-vert-marks-after-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png"));
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:disabled {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-disabled-darker.png"), url("assets/scale-vert-marks-after-slider-disabled-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-disabled-dark.png"), url("assets/scale-vert-marks-after-slider-disabled-dark@2.png"));
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:active {
-  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-darker.png"), url("assets/scale-vert-marks-after-slider-darker@2.png"));
+  background-image: -gtk-scaled(url("assets/scale-vert-marks-after-slider-dark.png"), url("assets/scale-vert-marks-after-slider-dark@2.png"));
 }
 
 scale.color {

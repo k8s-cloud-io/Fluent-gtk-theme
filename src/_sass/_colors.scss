@@ -24,8 +24,7 @@
 @function on($color, $state: 'primary') {
   // Allow 'light','dark' or 'darker' to $color
   @if ($color == 'light') { $color: white; }
-  @if ($color == 'dark') { $color: black; }
-  @if ($color == 'darker') {$color: black; }
+  @if ($color == 'dark' or $color == 'darker') { $color: black; }
 
   // Calculate color brightness according to https://www.w3.org/TR/AERT/#color-contrast
   $brightness: (red($color) * 299 + green($color) * 587 + blue($color) * 114) / 1000;
@@ -126,7 +125,7 @@ $titlebar:                              titlebar(normal);
 $titlebar-backdrop:                     titlebar(backdrop);
 
 $panel:                                 if($topbar == 'light', rgba(#F7F7F7, 0.8), rgba(#1F1F1F, 0.8));
-@if $topbar == 'darker' {
+@if $variant == 'darker' {
   $panel: rgba(#1F1F1F, 0.98);
   $tooltip: rgba(#303030, 0.9);
 }

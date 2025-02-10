@@ -101,8 +101,10 @@ install() {
   local icon="$6"
 
   [[ "$color" == '-Dark' ]] && local ELSE_DARK="$color"
+  [[ "$color" == '-Darker' ]] && local ELSE_DARKER="$color"
   [[ "$color" == '-Light' ]] && local ELSE_LIGHT="$color"
   [[ "$color" == '-Dark' ]] || [[ "$color" == '' ]] && local ACTIVITIES_ASSETS_SUFFIX="-Dark"
+  [[ "$color" == '-Darker' ]] && local ACTIVITIES_ASSETS_SUFFIX="-Darker"
 
   if [[ "$window" == 'round' ]]; then
     round='-round'
@@ -226,6 +228,7 @@ install() {
   mkdir -p                                                                      "$THEME_DIR/cinnamon"
   cp -r "$SRC_DIR/cinnamon/common-assets"                                       "$THEME_DIR/cinnamon/assets"
   cp -r "$SRC_DIR/cinnamon/assets${ELSE_DARK:-}/"*.svg                          "$THEME_DIR/cinnamon/assets"
+  cp -r "$SRC_DIR/cinnamon/assets${ELSE_DARKER:-}/"*.svg			"$THEME_DIR/cinnamon/assets"
 
   if [[ "$accent" == 'true' || "$opacity" == 'solid' ]]; then
     sassc $SASSC_OPT "$SRC_DIR/cinnamon/cinnamon$color$size.scss"               "$THEME_DIR/cinnamon/cinnamon.css"
@@ -492,9 +495,14 @@ while [[ "$#" -gt 0 ]]; do
             lcolors+=("${COLOR_VARIANTS[2]}")
             shift
             ;;
-          -*|--*)
-            break
-            ;;
+	  darker)
+	    colors+=("${COLOR_VARIANTS[3]}")
+	    lcolors+=("${COLOR_VARIANTS[3]}")
+	    shift
+	    ;;
+	  -*|--*)
+	  break
+	  ;;
           *)
             echo "ERROR: Unrecognized color variant '$1'."
             echo "Try '$0 --help' for more information."
