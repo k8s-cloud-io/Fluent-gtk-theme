@@ -13,6 +13,7 @@ window=
 blur=
 outline=
 titlebutton=
+eleven=
 icon='-default'
 
 # Destination directory
@@ -87,6 +88,7 @@ OPTIONS:
                           blur:     blur version for 'Blur-Me'
                           noborder: windows and menu with no border
                           square:   square windows button
+			  eleven:   align clock at right in cinnamon panel
 
   -h, --help              Show help
 EOF
@@ -230,7 +232,7 @@ install() {
   cp -r "$SRC_DIR/cinnamon/assets${ELSE_DARK:-}/"*.svg                          "$THEME_DIR/cinnamon/assets"
   cp -r "$SRC_DIR/cinnamon/assets${ELSE_DARKER:-}/"*.svg			"$THEME_DIR/cinnamon/assets"
 
-  if [[ "$accent" == 'true' || "$opacity" == 'solid' ]]; then
+  if [[ "$accent" == 'true' || "$opacity" == 'solid' || "$eleven" == 'true' ]]; then
     sassc $SASSC_OPT "$SRC_DIR/cinnamon/cinnamon$color$size.scss"               "$THEME_DIR/cinnamon/cinnamon.css"
   else
     cp -r "$SRC_DIR/cinnamon/cinnamon$color$size.css"                           "$THEME_DIR/cinnamon/cinnamon.css"
@@ -319,6 +321,11 @@ while [[ "$#" -gt 0 ]]; do
             echo -e "Install windows without outline version ..."
             shift
             ;;
+	  eleven)
+	    eleven="true"
+	    echo -e "Install windows eleven version..."
+	    shift
+	    ;;
           square)
             titlebutton="square"
             echo -e "Install square windows button version ..."
@@ -620,6 +627,10 @@ install_square() {
   sed -i "/\$titlebutton:/s/circular/square/" ${SRC_DIR}/_sass/_tweaks-temp.scss
 }
 
+install_eleven() {
+  sed -i "/\$eleven:/s/false/true/" $SRC_DIR/_sass/_tweaks-temp.scss
+}
+
 activities_style() {
   sed -i "/\$activities:/s/default/icon/" ${SRC_DIR}/gnome-shell/sass/_tweaks-temp.scss
 }
@@ -658,7 +669,7 @@ install_theme_color() {
 }
 
 theme_tweaks() {
-  if [[ "$panel" = "float" || "$opacity" == 'solid' || "$window" == 'round' || "$accent" == 'true' || "$blur" == 'true' || "$outline" == 'false' || "$titlebutton" == 'square' || "$activities" = "icon" ]]; then
+  if [[ "$panel" = "float" || "$opacity" == 'solid' || "$window" == 'round' || "$eleven" == "true" || "$accent" == 'true' || "$blur" == 'true' || "$outline" == 'false' || "$titlebutton" == 'square' || "$activities" = "icon" ]]; then
     tweaks='true'
     install_package; tweaks_temp
   fi
@@ -689,6 +700,10 @@ theme_tweaks() {
 
   if [[ "$activities" = "icon" ]] ; then
     activities_style
+  fi
+
+  if [[ "$eleven" = "true" ]] ; then
+    install_eleven
   fi
 }
 

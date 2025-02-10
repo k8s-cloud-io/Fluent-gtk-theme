@@ -200,3 +200,4 @@ $titlebar-fill:                         on($titlebar, fill);
 
 // workaround for GTK3 @placeholder_text_color which doesn't allow translucent colors
 $placeholder_text_color:                if($variant == 'light', mix(black, $base, percentage(0.6)), mix(white, $base, percentage(0.7)));
+

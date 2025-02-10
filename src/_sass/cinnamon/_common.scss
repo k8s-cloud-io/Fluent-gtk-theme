@@ -1,4 +1,3 @@
-
 //
 // Globals
 //
@@ -684,7 +683,12 @@ StScrollBar {
 .calendar-today-day-label {
   font-size: 1.75em;
   color: $text-secondary;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   text-align: center;
   padding-bottom: .1em;
 }
@@ -692,13 +696,23 @@ StScrollBar {
 .calendar-today-date-label {
   font-size: 1.1em;
   color: $text-disabled;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   text-align: center;
 }
 
 .calendar-month-label {
   color: $text;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   margin: 0 2px;
   padding: 2px; // label centering
 }
@@ -820,7 +834,12 @@ StScrollBar {
   height: 20px;
   margin: 6px 0;
   color: $track;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   background-color: $fill;
   border-radius: $circular-radius;
 
@@ -863,7 +882,12 @@ StScrollBar {
 .calendar-events-no-events-label {
   font-size: 1.1em;
   color: $text-disabled;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   text-align: center;
   margin-top: $space-size * 1.5;
 }
@@ -872,7 +896,12 @@ StScrollBar {
   padding: $space-size / 2 0 $space-size * 2 $space-size / 2;
   font-size: 1.1em;
   color: $text-secondary;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   text-align: center;
 }
 
@@ -910,13 +939,23 @@ StScrollBar {
 
 .calendar-event-time-past {
   color: $text-secondary-disabled;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   text-align: left;
   margin-bottom: .6em;
 }
 
 .calendar-event-time-present {
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   text-align: left;
   margin-bottom: .6em;
 }
@@ -932,7 +971,12 @@ StScrollBar {
 
 .calendar-event-countdown {
   color: $text-disabled;
-  font-weight: bold;
+  @if $eleven == 'true' {
+    font-weight: normal;
+  }
+  @else {
+    font-weight: bold;
+  }
   text-align: right;
   margin-bottom: .6em;
 }
@@ -2043,7 +2087,13 @@ StScrollBar {
   }
 
   &-label {
-    font-weight: bold;
+    @if $eleven == 'true' {
+      font-weight: normal;
+      text-align: right;
+    }
+    @else {
+      font-weight: bold;
+    }
     color: on($panel);
 
     .applet-box:checked & {
