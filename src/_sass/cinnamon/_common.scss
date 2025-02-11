@@ -225,7 +225,7 @@ StScrollBar {
   &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
 
   .popup-menu-item:active & {
-    background-image: url("assets-Dark/toggle-off.svg");
+    background-image: url("#{$asset_path}/toggle-off.svg");
 
     &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
   }
@@ -819,8 +819,14 @@ StScrollBar {
 .calendar-today:hover,
 .calendar-today:selected {
   font-weight: bold;
-  color: on($primary);
-  background-color: $primary;
+  @if $eleven == 'true' {
+    color: $surface;
+    background-color: rgb(76, 195, 255);
+  }
+  @else {
+    color: on($primary);
+    background-color: $primary;
+  }
   border-width: 0;
 }
 
