@@ -222,12 +222,22 @@ StScrollBar {
   background-size: contain;
   background-image: url("#{$asset_path}/toggle-off.svg");
 
-  &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
+  @if $variant == 'darker' and $eleven == 'true' {
+    &:checked { background-image: url("#{$asset_path}/toggle-on-eleven.svg"); }
+  }
+  @else {
+    &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
+  }
 
   .popup-menu-item:active & {
     background-image: url("#{$asset_path}/toggle-off.svg");
 
-    &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
+    @if $variant == 'darker' and $eleven == 'true' {
+      &:checked { background-image: url("#{$asset_path}/toggle-on-eleven.svg"); }
+    }
+    @else {
+      &:checked { background-image: url("#{$asset_path}/toggle-on.svg"); }
+    }
   }
 }
 
@@ -275,7 +285,7 @@ StScrollBar {
     background-color: $menu;
     border-radius: $menu-radius;
     margin: $space-size;
-    box-shadow: 0 5px 12px rgba(black, 0.35);
+    box-shadow: 0 3px 12px rgba(black, 0.5);
   }
 
   .popup-sub-menu {
@@ -819,14 +829,8 @@ StScrollBar {
 .calendar-today:hover,
 .calendar-today:selected {
   font-weight: bold;
-  @if $eleven == 'true' {
-    color: $surface;
-    background-color: rgb(76, 195, 255);
-  }
-  @else {
-    color: on($primary);
-    background-color: $primary;
-  }
+  color: on($primary);
+  background-color: $primary;
   border-width: 0;
 }
 
@@ -2096,6 +2100,7 @@ StScrollBar {
     @if $eleven == 'true' {
       font-weight: normal;
       text-align: right;
+      font-size: 10pt;
     }
     @else {
       font-weight: bold;

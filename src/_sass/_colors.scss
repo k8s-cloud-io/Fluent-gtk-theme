@@ -100,8 +100,8 @@ $primary:                               theme(color);
 $entry-highlight:                       lighten($primary, 25%);
 $drop_target_color:                     #FF7043;
 
-$background: #222222;
-$surface: #222222;
+$background: #202020;
+$surface: #202020;
 
 @if $variant == 'light' {
   $background: #F2F2F2;
@@ -110,6 +110,10 @@ $surface: #222222;
 @else if $variant == 'dark' {
   $background: #333333;
   $surface: #3C3C3C
+}
+
+@if $variant == 'darker' and $eleven == 'true' {
+  $primary: #60ceff;
 }
 
 $base:                                  if($variant == 'light', #FFFFFF, #2B2B2B); // semi-surface with 1dp elevation

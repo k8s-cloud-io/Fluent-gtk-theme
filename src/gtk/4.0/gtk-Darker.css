@@ -2,7 +2,7 @@
  * Base States *
  ***************/
 .background {
-  background-color: #222222;
+  background-color: #202020;
   color: white;
 }
 
@@ -1687,7 +1687,7 @@ combobox > .linked:not(.vertical) > button:not(:only-child) {
 .toolbar,
 toolbar {
   padding: 6px;
-  background-color: #222222;
+  background-color: #202020;
   border-spacing: 6px;
 }
 
@@ -1701,7 +1701,7 @@ toolbar.osd {
   padding: 6px;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 3px 4px rgba(0, 0, 0, 0.14), 0 1px 6px rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
-  background-color: #222222;
+  background-color: #202020;
   border: none;
   color: white;
 }
@@ -1747,7 +1747,7 @@ searchbar > revealer > box {
   border-style: solid;
   border-width: 0 0 1px;
   border-color: rgba(255, 255, 255, 0.12);
-  background-color: #222222;
+  background-color: #202020;
   background-clip: border-box;
   box-shadow: none;
 }
@@ -2190,8 +2190,8 @@ headerbar .pathbar {
  * Tree Views *
  **************/
 treeview.view {
-  border-left-color: #3c3c3c;
-  border-top-color: #3c3c3c;
+  border-left-color: #3a3a3a;
+  border-top-color: #3a3a3a;
   padding: 0;
 }
 
@@ -2538,14 +2538,14 @@ popover.background, popover.background:backdrop {
 popover.background > arrow {
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.1);
-  background-color: rgba(34, 34, 34, 0.98);
+  background-color: rgba(32, 32, 32, 0.98);
 }
 
 popover.background > contents {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 6px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 4px 5px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.1);
-  background-color: rgba(34, 34, 34, 0.98);
+  background-color: rgba(32, 32, 32, 0.98);
   border-radius: 6px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -2585,7 +2585,7 @@ popover.background > contents list separator {
 popover.background list,
 popover.background .view:not(:selected),
 popover.background toolbar {
-  background-color: #222222;
+  background-color: #202020;
 }
 
 popover.background list > row {
@@ -2709,7 +2709,7 @@ tabbar tabbox tab:disabled, notebook > header tab:disabled {
 tabbar tabbox tab:checked, notebook > header tab:checked, tabbar tabbox tab:selected, notebook > header tab:selected {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
   background-clip: padding-box;
-  border-color: #3c3c3c;
+  border-color: #3a3a3a;
   color: white;
   box-shadow: none;
 }
@@ -2751,7 +2751,7 @@ notebook:focus tab:checked {
 notebook > header {
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.12);
-  background-color: #222222;
+  background-color: #202020;
   background-clip: border-box;
 }
 
@@ -2937,14 +2937,14 @@ notebook > stack:not(:only-child) {
 tabbar .box {
   min-height: 32px;
   border-bottom: none;
-  background-color: #222222;
+  background-color: #202020;
   background-clip: border-box;
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12);
   padding: 0;
 }
 
 tabbar:backdrop .box {
-  background-color: #222222;
+  background-color: #202020;
 }
 
 tabbar:backdrop .box > scrolledwindow,
@@ -3110,7 +3110,7 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical button {
 }
 
 scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
-  background-color: rgba(34, 34, 34, 0.9);
+  background-color: rgba(32, 32, 32, 0.9);
 }
 
 scrollbar.horizontal > range > trough > slider {
@@ -3468,7 +3468,7 @@ scale > trough > highlight {
 }
 
 scale > trough > highlight:disabled {
-  background-color: #222222;
+  background-color: #202020;
   background-image: image(rgba(255, 255, 255, 0.3));
 }
 
@@ -4220,7 +4220,7 @@ calendar > grid > label.day-number.other-month {
  * Dialogs *
  ***********/
 window.dialog.message.background {
-  background-color: #222222;
+  background-color: #202020;
 }
 
 window.dialog.message box.dialog-vbox.vertical {
@@ -4231,12 +4231,12 @@ window.dialog.message .titlebar {
   min-height: 22px;
   border-style: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
-  background-color: #222222;
+  background-color: #202020;
   color: white;
 }
 
 window.dialog.message .titlebar:backdrop {
-  background-color: #222222;
+  background-color: #202020;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -4265,7 +4265,7 @@ window.dialog.message.csd .dialog-action-area > button.destructive-action:not(:d
 }
 
 window.messagedialog.background {
-  background-color: #222222;
+  background-color: #202020;
 }
 
 window.messagedialog .response-area {
@@ -4305,7 +4305,7 @@ filechooser .dialog-action-box {
 
 filechooser #pathbarbox {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  background-color: #222222;
+  background-color: #202020;
 }
 
 filechooserbutton > button > box {
@@ -4521,7 +4521,7 @@ paned > separator {
 paned > separator.wide {
   min-width: 6px;
   min-height: 6px;
-  background-color: #222222;
+  background-color: #202020;
   background-image: image(rgba(255, 255, 255, 0.12)), image(rgba(255, 255, 255, 0.12));
   background-size: 1px 1px, 1px 1px;
 }
@@ -4721,7 +4721,7 @@ colorswatch#add-color-button:only-child {
 }
 
 colorswatch#add-color-button overlay {
-  background-color: #222222;
+  background-color: #202020;
 }
 
 colorswatch:disabled {
@@ -4744,7 +4744,7 @@ colorchooser .popover.osd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 3px 4px rgba(0, 0, 0, 0.14), 0 1px 6px rgba(0, 0, 0, 0.12), inset 0 1px rgba(255, 255, 255, 0.1);
-  background-color: #222222;
+  background-color: #202020;
 }
 
 colorchooser .popover.osd:backdrop {
@@ -4755,7 +4755,7 @@ colorchooser .popover.osd:backdrop {
  * Misc *
  ********/
 .content-view {
-  background-color: #222222;
+  background-color: #202020;
 }
 
 /**********************
@@ -4874,7 +4874,7 @@ shortcut > .keycap {
   border: solid 1px rgba(255, 255, 255, 0.12);
   border-radius: 3px;
   box-shadow: inset 0 -2px rgba(255, 255, 255, 0.12);
-  background-color: #222222;
+  background-color: #202020;
   color: white;
   font-size: smaller;
 }
@@ -5187,7 +5187,7 @@ weekgrid.current {
 }
 
 popover.events {
-  background-color: rgba(34, 34, 34, 0.98);
+  background-color: rgba(32, 32, 32, 0.98);
   padding: 0;
 }
 
@@ -6995,7 +6995,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane:backdrop {
-  background-color: #222222;
+  background-color: #202020;
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -7090,7 +7090,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 
 .content-pane .sidebar-pane:backdrop,
 .sidebar-pane .content-pane:backdrop {
-  background-color: #222222;
+  background-color: #202020;
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1);
 }
 
@@ -7557,7 +7557,7 @@ tabbar tab {
 tabbar tab:selected, tabbar tab:checked, tabbar tab:active, tabbar tab:active:hover, tabbar tab:checked:hover {
   background-color: #2B2B2B;
   background-clip: padding-box;
-  border-color: #3c3c3c;
+  border-color: #3a3a3a;
   color: white;
 }
 
@@ -7583,7 +7583,7 @@ tabbar .end-action:dir(ltr) {
 }
 
 tabbar:not(.inline) .box {
-  background-color: #222222;
+  background-color: #202020;
   color: rgba(255, 255, 255, 0.7);
   padding: 0;
   box-shadow: none;
@@ -7597,7 +7597,7 @@ tabbar:not(.inline):backdrop .box > .end-action {
 }
 
 dnd tab {
-  background-color: #222222;
+  background-color: #202020;
   color: rgba(255, 255, 255, 0.7);
   box-shadow: none;
   margin: 24px;
@@ -7782,7 +7782,7 @@ text color for entries, views and content in general */
 @define-color theme_text_color white;
 /*
 widget base background color */
-@define-color theme_bg_color #222222;
+@define-color theme_bg_color #202020;
 /*
 text widgets and the like base background color */
 @define-color theme_base_color #2B2B2B;
@@ -7794,7 +7794,7 @@ text/foreground color of selections */
 @define-color theme_selected_fg_color white;
 /*
 base background color of insensitive widgets */
-@define-color insensitive_bg_color #222222;
+@define-color insensitive_bg_color #202020;
 /*
 text foreground color of insensitive widgets */
 @define-color insensitive_fg_color rgba(255, 255, 255, 0.5);
@@ -7809,7 +7809,7 @@ text color for entries, views and content in general on backdrop windows */
 @define-color theme_unfocused_text_color white;
 /*
 widget base background color on backdrop windows */
-@define-color theme_unfocused_bg_color #222222;
+@define-color theme_unfocused_bg_color #202020;
 /*
 text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color #2B2B2B;

@@ -303,7 +303,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 5px;
   margin: 4px;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
 }
 
 .menu .popup-sub-menu,

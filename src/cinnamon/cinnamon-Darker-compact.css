@@ -156,13 +156,13 @@ StScrollBar StBin#trough {
 
 StScrollBar StButton#vhandle, StScrollBar StButton#hhandle {
   border-radius: 9999px;
-  background-color: #7a7a7a;
+  background-color: #797979;
   border: 0px solid;
   margin: 0px;
 }
 
 StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
-  background-color: #646464;
+  background-color: #636363;
 }
 
 StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
@@ -300,10 +300,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-menu-content {
   padding: 4px 0;
   color: white;
-  background-color: rgba(34, 34, 34, 0.98);
+  background-color: rgba(32, 32, 32, 0.98);
   border-radius: 5px;
   margin: 4px;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
 }
 
 .menu .popup-sub-menu,
@@ -1057,7 +1057,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   margin-from-right-edge-of-screen: 12px;
   width: 28em;
   color: white;
-  background-color: rgba(34, 34, 34, 0.98);
+  background-color: rgba(32, 32, 32, 0.98);
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
   margin: 7px 12px 17px 12px;
 }
@@ -1136,7 +1136,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .switcher-list {
   color: white;
-  background-color: rgba(34, 34, 34, 0.98);
+  background-color: rgba(32, 32, 32, 0.98);
   border: none;
   border-radius: 2px;
   padding: 20px;
@@ -1830,7 +1830,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .grouped-window-list-thumbnail-menu {
   padding: 4px;
   color: white;
-  background-color: rgba(34, 34, 34, 0.98);
+  background-color: rgba(32, 32, 32, 0.98);
   border-radius: 5px;
   margin: 4px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
@@ -2088,7 +2088,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: 0px solid rgba(28, 28, 28, 0.98);
   border-bottom: 1px;
   -slider-height: 0.5em;
-  -slider-background-color: #151515;
+  -slider-background-color: #131313;
   -slider-border-color: rgba(0, 0, 0, 0);
   -slider-active-background-color: #3281EA;
   -slider-active-border-color: rgba(0, 0, 0, 0);
