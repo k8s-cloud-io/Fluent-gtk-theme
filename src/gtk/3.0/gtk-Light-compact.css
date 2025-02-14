@@ -8248,6 +8248,11 @@ window.background.csd.thunar scrolledwindow.frame.sidebar.shortcuts-pane treevie
   -NemoPlacesTreeView-disk-full-max-length: 80px;
 }
 
+/* thunar */
+.thunar .shortcuts-pane {
+  background: #252525;
+}
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */

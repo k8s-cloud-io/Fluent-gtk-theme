@@ -16,14 +16,21 @@
 
   @if $t==normal {
     color: $text;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     background-color: $fill;
   }
 
   @if $t==focus {
     color: $text;
     background-color: $fill;
-    border: 2px solid $primary;
+    @if $eleven == 'true' {
+      outline: none;
+border: 1px solid red; 
+      border-bottom: 1px solid $primary;
+    }
+    @else {
+      border: 2px solid $primary;
+    }
   }
 
   @if $t==insensitive {
