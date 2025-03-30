@@ -112,6 +112,7 @@ $surface: #202020;
   $surface: #3C3C3C
 }
 
+$primary: #0366bf;
 @if $variant == 'darker' and $eleven == 'true' {
   $primary: #60ceff;
 }
@@ -128,7 +129,7 @@ $tooltip:                               rgba(#363636, 0.9);
 $titlebar:                              titlebar(normal);
 $titlebar-backdrop:                     titlebar(backdrop);
 
-$panel:                                 if($topbar == 'light', rgba(#F7F7F7, 0.8), rgba(#1F1F1F, 0.8));
+$panel:                                 if($topbar == 'light', rgba(#F7F7F7, 0.85), rgba(#1F1F1F, 0.8));
 @if $variant == 'darker' {
   $panel: rgba(#1F1F1F, 0.98);
   $tooltip: rgba(#303030, 0.98);
