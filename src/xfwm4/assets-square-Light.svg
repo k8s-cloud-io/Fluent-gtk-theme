@@ -444,7 +444,7 @@
            width="38"
            height="28"
            ry="0"
-           fill="#f68086"
+           fill="#ff0000"
            style="paint-order:stroke fill markers"
            id="rect18" />
         <path
@@ -534,7 +534,7 @@
            width="38"
            height="28"
            ry="0"
-           fill="#d05258"
+           fill="#dd0000"
            style="paint-order:stroke fill markers"
            id="rect22" />
         <path
